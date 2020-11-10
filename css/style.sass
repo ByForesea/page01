@@ -54,7 +54,7 @@ body::-webkit-scrollbar
   a.logo
       margin: 0px 10px 10px 0px
       width:150px
-      height:40px 
+      height:45px 
       padding: 5px
       float: left
       display: block
@@ -230,7 +230,6 @@ body::-webkit-scrollbar
   left: 0%
   display: inline
   transform-origin: top center
-  animation: hand 1s ease-in-out infinite alternate
 
   @keyframes hand
     from
@@ -238,6 +237,31 @@ body::-webkit-scrollbar
 
     to
       transform: translateY(0px)
+
+.hand
+  position: absolute
+  z-index: 110
+  top: 24.5%
+  left: 27.7%
+  display: inline
+  transform-origin: bottom center
+  animation: hand 1s ease-in-out infinite alternate
+
+@keyframes hand
+    from
+      transform: rotate(2deg)
+
+    to
+      transform: rotate(-2deg)
+
+.sault
+  position: absolute
+  z-index: 110
+  top: 50%
+  left: 34%
+  display: inline
+
+
 
 .test
   z-index: -99
@@ -252,6 +276,7 @@ body::-webkit-scrollbar
   z-index: -99
   height: 200vh
   border-radius:50px 50px 0px 0px
+  z-index: -99
 
 
 .main2-pic1
@@ -271,10 +296,11 @@ body::-webkit-scrollbar
 
 .main2-pic3
   position: absolute
-  right: 5%
+  right: 0%
   margin-top:-10%
   float: right
   z-index: 99
+  transform: rotate(180deg)
   
 
 .main2-text
@@ -297,6 +323,9 @@ body::-webkit-scrollbar
   right: -15%
   bottom: -165%
   z-index: 99
+
+
+
 
 .main3
   width:100vw
